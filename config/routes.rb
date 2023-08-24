@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   get 'lists/:id/edit' => 'lists#edit', as: 'edit_list'
   get '/top' => 'homes#top'
   get 'lists/:id' => 'lists#show', as: 'list'
+  patch 'lists/:id' => 'lists#update', as: 'update_list'
 end
